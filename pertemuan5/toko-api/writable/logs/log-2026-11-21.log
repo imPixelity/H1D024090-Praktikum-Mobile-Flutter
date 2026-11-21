@@ -1,0 +1,300 @@
+ERROR - 2026-11-21 16:36:31 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/Database/MySQLi/Connection.php:210
+Stack trace:
+#0 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/Database/MySQLi/Connection.php(210): mysqli->real_connect()
+#1 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/Database/BaseConnection.php(549): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/Database/BaseConnection.php(815): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/Database/BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query()
+#4 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/Model.php(298): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/app/Controllers/LoginController.php(16): CodeIgniter\BaseModel->first()
+#7 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/CodeIgniter.php(972): App\Controllers\LoginController->login()
+#8 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/CodeIgniter.php(518): CodeIgniter\CodeIgniter->runController()
+#9 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/rewrite.php(44): require_once('...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/Database/MySQLi/Connection.php:240
+Stack trace:
+#0 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/Database/BaseConnection.php(549): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/Database/BaseConnection.php(815): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/Database/BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query()
+#3 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/Model.php(298): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/BaseModel.php(714): CodeIgniter\Model->doFirst()
+#5 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/app/Controllers/LoginController.php(16): CodeIgniter\BaseModel->first()
+#6 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/CodeIgniter.php(972): App\Controllers\LoginController->login()
+#7 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/CodeIgniter.php(518): CodeIgniter\CodeIgniter->runController()
+#8 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#11 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#12 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/rewrite.php(44): require_once('...')
+#13 {main}
+CRITICAL - 2026-11-21 16:36:31 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+[Method: POST, Route: login]
+in SYSTEMPATH/Database/BaseConnection.php on line 600.
+ 1 SYSTEMPATH/Database/BaseConnection.php(815): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(298): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Controllers/LoginController.php(16): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH/CodeIgniter.php(972): App\Controllers\LoginController->login()
+ 7 SYSTEMPATH/CodeIgniter.php(518): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/public/index.php')
+ERROR - 2026-11-21 16:36:37 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/Database/MySQLi/Connection.php:210
+Stack trace:
+#0 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/Database/MySQLi/Connection.php(210): mysqli->real_connect()
+#1 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/Database/BaseConnection.php(549): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/Database/BaseConnection.php(815): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/Database/BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query()
+#4 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/Model.php(298): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/app/Controllers/LoginController.php(16): CodeIgniter\BaseModel->first()
+#7 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/CodeIgniter.php(972): App\Controllers\LoginController->login()
+#8 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/CodeIgniter.php(518): CodeIgniter\CodeIgniter->runController()
+#9 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/rewrite.php(44): require_once('...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/Database/MySQLi/Connection.php:240
+Stack trace:
+#0 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/Database/BaseConnection.php(549): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/Database/BaseConnection.php(815): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/Database/BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query()
+#3 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/Model.php(298): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/BaseModel.php(714): CodeIgniter\Model->doFirst()
+#5 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/app/Controllers/LoginController.php(16): CodeIgniter\BaseModel->first()
+#6 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/CodeIgniter.php(972): App\Controllers\LoginController->login()
+#7 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/CodeIgniter.php(518): CodeIgniter\CodeIgniter->runController()
+#8 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#11 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#12 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/rewrite.php(44): require_once('...')
+#13 {main}
+CRITICAL - 2026-11-21 16:36:37 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+[Method: POST, Route: login]
+in SYSTEMPATH/Database/BaseConnection.php on line 600.
+ 1 SYSTEMPATH/Database/BaseConnection.php(815): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(298): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Controllers/LoginController.php(16): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH/CodeIgniter.php(972): App\Controllers\LoginController->login()
+ 7 SYSTEMPATH/CodeIgniter.php(518): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/public/index.php')
+ERROR - 2026-11-21 16:36:37 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/Database/MySQLi/Connection.php:210
+Stack trace:
+#0 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/Database/MySQLi/Connection.php(210): mysqli->real_connect()
+#1 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/Database/BaseConnection.php(549): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/Database/BaseConnection.php(815): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/Database/BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query()
+#4 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/Model.php(298): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/app/Controllers/LoginController.php(16): CodeIgniter\BaseModel->first()
+#7 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/CodeIgniter.php(972): App\Controllers\LoginController->login()
+#8 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/CodeIgniter.php(518): CodeIgniter\CodeIgniter->runController()
+#9 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/rewrite.php(44): require_once('...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/Database/MySQLi/Connection.php:240
+Stack trace:
+#0 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/Database/BaseConnection.php(549): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/Database/BaseConnection.php(815): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/Database/BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query()
+#3 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/Model.php(298): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/BaseModel.php(714): CodeIgniter\Model->doFirst()
+#5 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/app/Controllers/LoginController.php(16): CodeIgniter\BaseModel->first()
+#6 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/CodeIgniter.php(972): App\Controllers\LoginController->login()
+#7 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/CodeIgniter.php(518): CodeIgniter\CodeIgniter->runController()
+#8 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#11 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#12 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/rewrite.php(44): require_once('...')
+#13 {main}
+CRITICAL - 2026-11-21 16:36:37 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+[Method: POST, Route: login]
+in SYSTEMPATH/Database/BaseConnection.php on line 600.
+ 1 SYSTEMPATH/Database/BaseConnection.php(815): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(298): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Controllers/LoginController.php(16): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH/CodeIgniter.php(972): App\Controllers\LoginController->login()
+ 7 SYSTEMPATH/CodeIgniter.php(518): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/public/index.php')
+ERROR - 2026-11-21 16:37:09 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/Database/MySQLi/Connection.php:210
+Stack trace:
+#0 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/Database/MySQLi/Connection.php(210): mysqli->real_connect()
+#1 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/Database/BaseConnection.php(549): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/Database/BaseConnection.php(815): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/Database/BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query()
+#4 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#6 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/app/Controllers/ProdukController.php(26): CodeIgniter\BaseModel->findAll()
+#7 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/CodeIgniter.php(972): App\Controllers\ProdukController->list()
+#8 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/CodeIgniter.php(518): CodeIgniter\CodeIgniter->runController()
+#9 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/rewrite.php(44): require_once('...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/Database/MySQLi/Connection.php:240
+Stack trace:
+#0 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/Database/BaseConnection.php(549): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/Database/BaseConnection.php(815): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/Database/BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query()
+#3 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#5 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/app/Controllers/ProdukController.php(26): CodeIgniter\BaseModel->findAll()
+#6 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/CodeIgniter.php(972): App\Controllers\ProdukController->list()
+#7 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/CodeIgniter.php(518): CodeIgniter\CodeIgniter->runController()
+#8 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#11 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#12 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/rewrite.php(44): require_once('...')
+#13 {main}
+CRITICAL - 2026-11-21 16:37:09 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+[Method: GET, Route: produk]
+in SYSTEMPATH/Database/BaseConnection.php on line 600.
+ 1 SYSTEMPATH/Database/BaseConnection.php(815): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/ProdukController.php(26): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(972): App\Controllers\ProdukController->list()
+ 7 SYSTEMPATH/CodeIgniter.php(518): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/public/index.php')
+ERROR - 2026-11-21 16:37:25 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/Database/MySQLi/Connection.php:210
+Stack trace:
+#0 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/Database/MySQLi/Connection.php(210): mysqli->real_connect()
+#1 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/Database/BaseConnection.php(549): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/Database/BaseConnection.php(815): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/Database/BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query()
+#4 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#6 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/app/Controllers/ProdukController.php(26): CodeIgniter\BaseModel->findAll()
+#7 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/CodeIgniter.php(972): App\Controllers\ProdukController->list()
+#8 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/CodeIgniter.php(518): CodeIgniter\CodeIgniter->runController()
+#9 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/rewrite.php(44): require_once('...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/Database/MySQLi/Connection.php:240
+Stack trace:
+#0 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/Database/BaseConnection.php(549): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/Database/BaseConnection.php(815): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/Database/BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query()
+#3 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#5 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/app/Controllers/ProdukController.php(26): CodeIgniter\BaseModel->findAll()
+#6 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/CodeIgniter.php(972): App\Controllers\ProdukController->list()
+#7 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/CodeIgniter.php(518): CodeIgniter\CodeIgniter->runController()
+#8 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#11 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#12 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/rewrite.php(44): require_once('...')
+#13 {main}
+CRITICAL - 2026-11-21 16:37:25 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+[Method: GET, Route: produk]
+in SYSTEMPATH/Database/BaseConnection.php on line 600.
+ 1 SYSTEMPATH/Database/BaseConnection.php(815): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/ProdukController.php(26): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(972): App\Controllers\ProdukController->list()
+ 7 SYSTEMPATH/CodeIgniter.php(518): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/public/index.php')
+ERROR - 2026-11-21 16:37:27 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/Database/MySQLi/Connection.php:210
+Stack trace:
+#0 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/Database/MySQLi/Connection.php(210): mysqli->real_connect()
+#1 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/Database/BaseConnection.php(549): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/Database/BaseConnection.php(815): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/Database/BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query()
+#4 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#6 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/app/Controllers/ProdukController.php(26): CodeIgniter\BaseModel->findAll()
+#7 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/CodeIgniter.php(972): App\Controllers\ProdukController->list()
+#8 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/CodeIgniter.php(518): CodeIgniter\CodeIgniter->runController()
+#9 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/rewrite.php(44): require_once('...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/Database/MySQLi/Connection.php:240
+Stack trace:
+#0 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/Database/BaseConnection.php(549): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/Database/BaseConnection.php(815): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/Database/BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query()
+#3 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#5 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/app/Controllers/ProdukController.php(26): CodeIgniter\BaseModel->findAll()
+#6 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/CodeIgniter.php(972): App\Controllers\ProdukController->list()
+#7 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/CodeIgniter.php(518): CodeIgniter\CodeIgniter->runController()
+#8 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#9 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#11 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#12 /home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/system/rewrite.php(44): require_once('...')
+#13 {main}
+CRITICAL - 2026-11-21 16:37:27 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+[Method: GET, Route: produk]
+in SYSTEMPATH/Database/BaseConnection.php on line 600.
+ 1 SYSTEMPATH/Database/BaseConnection.php(815): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 5 APPPATH/Controllers/ProdukController.php(26): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(972): App\Controllers\ProdukController->list()
+ 7 SYSTEMPATH/CodeIgniter.php(518): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/photon/Station/H1D024090-Praktikum-Mobile-Flutter/pertemuan5/toko-api/public/index.php')

@@ -16,3 +16,7 @@ Shift Akhir: G
 ## Pertemuan 4
 
 ![](./doksli/pert4.0.gif)
+
+## Pertemuan 5
+
+![](./doksli/pert5.0.gif)
