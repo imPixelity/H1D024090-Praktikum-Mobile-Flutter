@@ -1,0 +1,23 @@
+.state-message {
+  display: grid;
+  justify-items: center;
+  gap: 0.25rem;
+  margin: 3rem 1rem;
+  color: var(--ion-color-medium);
+  text-align: center;
+}
+
+.state-message ion-icon {
+  font-size: 2.5rem;
+}
+
+.state-message p {
+  margin: 0.25rem 0;
+}
+
+.card-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  padding-top: 0;
+}

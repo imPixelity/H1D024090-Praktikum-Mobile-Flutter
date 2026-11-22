@@ -1,0 +1,7 @@
+{
+  "name": "crudmhs",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

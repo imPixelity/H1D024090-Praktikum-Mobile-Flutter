@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form (ngSubmit)="login()">
+    <ion-item lines="full">
+      <ion-label position="floating">Username</ion-label>
+      <ion-input
+        name="username"
+        type="text"
+        autocomplete="username"
+        [(ngModel)]="username"
+        required
+      ></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Password</ion-label>
+      <ion-input
+        name="password"
+        type="password"
+        autocomplete="current-password"
+        [(ngModel)]="password"
+        required
+      ></ion-input>
+    </ion-item>
+
+    <ion-row>
+      <ion-col>
+        <ion-button
+          class="login-button"
+          type="submit"
+          color="primary"
+          expand="block"
+          [disabled]="isLoading"
+        >
+          {{ isLoading ? 'Memproses...' : 'Login' }}
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </form>
+</ion-content>
